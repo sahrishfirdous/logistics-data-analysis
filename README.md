@@ -103,15 +103,6 @@ Main libraries include:
 - scikit-learn
 - openpyxl
 The project is developed and executed using Visual Studio Code.
-## Project Structure
-The Week 1 repository contains the main Python code, analysis outputs, and written report.
-Example structure:
-Week-1/
-- week1.py
-- logistics_kpi_results.csv
-- Week1_Logistics_Strategic_Planning_Detailed_Report.docx
-- README.md
-The original Online Retail dataset is not included in the repository because of its file size and dataset distribution considerations.
 ## Expected Outcomes
 The analysis is expected to provide:
 - A better understanding of historical demand.
@@ -152,3 +143,118 @@ The work completed in Week 1 will provide the foundation for the subsequent week
 Project: Logistics Data Analysis
 
 Week: 1
+
+# Week 2 – Data Collection, Cleaning, and Preprocessing
+
+## Overview
+
+Week 2 focused on preparing the Online Retail dataset for further logistics analysis. The main objective was to identify and resolve common data-quality problems and create a cleaner and more reliable dataset for future analysis and machine-learning applications.
+
+## Objectives
+
+- Load and inspect the dataset.
+- Identify missing values.
+- Detect and remove duplicate records.
+- Identify potential invalid values.
+- Detect outliers using the IQR method.
+- Handle extreme quantity values.
+- Create a Revenue variable.
+- Normalize numerical variables.
+- Validate the cleaned dataset.
+- Save the processed dataset for future analysis.
+
+## Dataset
+
+The project uses the Online Retail dataset containing transaction-level records from a UK-based online retailer.
+
+The original dataset contains information such as:
+
+- Invoice number
+- Product code
+- Product description
+- Quantity
+- Invoice date
+- Unit price
+- Customer ID
+- Country
+
+These variables can be used to study demand, product activity, sales value, and geographic patterns relevant to logistics analysis.
+
+## Data Cleaning Process
+
+The following preprocessing steps were completed:
+
+1. Loaded the Excel dataset using Pandas.
+2. Inspected the dataset structure.
+3. Checked for missing values.
+4. Checked for duplicate records.
+5. Removed exact duplicate rows.
+6. Handled missing values in important fields.
+7. Detected quantity outliers using the IQR method.
+8. Capped extreme quantity values.
+9. Performed a data-quality validation.
+10. Created a Revenue variable.
+11. Normalized numerical variables using StandardScaler.
+12. Saved the cleaned dataset.
+13. Created a preprocessing summary.
+14. Performed final validation.
+
+## Outlier Detection
+
+The Interquartile Range (IQR) method was used to identify unusually large values in the Quantity column.
+
+The IQR is calculated as:
+
+IQR = Q3 - Q1
+
+Potential outliers were identified using:
+
+Lower Limit = Q1 - 1.5 × IQR
+
+Upper Limit = Q3 + 1.5 × IQR
+
+Extreme quantity values were capped rather than automatically deleted because unusually large transactions may represent legitimate bulk orders.
+
+## Revenue Calculation
+
+A new Revenue variable was created using:
+
+Revenue = Quantity × UnitPrice
+
+This provides a financial measure that can be analyzed alongside physical demand.
+
+## Normalization
+
+The following numerical variables were normalized:
+
+- Quantity
+- UnitPrice
+- Revenue
+
+The `StandardScaler` technique from Scikit-learn was used to standardize the variables.
+
+This is useful for future machine-learning techniques where variables with different scales can affect the results.
+
+## Tools Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Excel
+- Visual Studio Code
+
+## Files
+
+- `week 2.py` – Complete Week 2 preprocessing code.
+- `cleaned_logistics_data.csv` – Cleaned and preprocessed dataset.
+- `preprocessing_summary.csv` – Summary of the preprocessing results.
+- `Week2_Logistics_Data_Cleaning_Preprocessing_Report.docx` – Detailed Week 2 report.
+
+## Outcome
+
+At the end of Week 2, the dataset was cleaned, transformed, normalized, and validated. The resulting dataset provides a stronger foundation for future logistics analysis such as demand forecasting, inventory analysis, customer segmentation, and optimization.
+
+## Key Learning
+
+Week 2 demonstrated that data quality is essential for reliable logistics analytics. Missing values, duplicates, invalid values, and extreme observations can affect calculations and decision-making. A structured preprocessing pipeline helps ensure that future analysis is based on more reliable and consistent data.
