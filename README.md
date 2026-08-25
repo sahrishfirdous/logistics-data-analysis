@@ -253,8 +253,268 @@ This is useful for future machine-learning techniques where variables with diffe
 
 ## Outcome
 
-At the end of Week 2, the dataset was cleaned, transformed, normalized, and validated. The resulting dataset provides a stronger foundation for future logistics analysis such as demand forecasting, inventory analysis, customer segmentation, and optimization.
+At the end of Week 2, the dataset was cleaned, transformed, normalized, and validated. 
+The resulting dataset provides a stronger foundation for future logistics analysis such as demand forecasting, inventory analysis, customer segmentation, and optimization.
 
-## Key Learning
+# Week 3 - Advanced Data Analysis and Visualization in Logistics
+
+## Overview
+
+Week 3 focused on advanced data analysis and visualization for logistics using Python.
+The main objective was to explore a hypothetical logistics dataset, perform exploratory data analysis (EDA),
+create meaningful visualizations, identify relationships between logistics variables, and generate practical insights for data-driven decision-making.
+A simulated dataset containing 500 shipments was created using Python, NumPy, and Pandas.
+The dataset included delivery time, shipment volume, transportation cost, distance, and fuel cost.
+
+## Objectives
+The main objectives of Week 3 were:
+
+- Create a hypothetical logistics dataset.
+- Inspect and validate the dataset.
+- Perform exploratory data analysis.
+- Calculate descriptive statistics.
+- Analyze delivery-time patterns.
+- Analyze shipment-volume patterns.
+- Analyze transportation costs.
+- Create logistics visualizations.
+- Perform correlation analysis.
+- Identify potential logistics cost drivers.
+- Generate operational insights and recommendations.
+
+## Dataset
+The dataset contains 500 simulated shipments with the following variables:
+
+
+## Tools and Technologies
+
+The following tools and Python libraries were used:
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Visual Studio Code
+- CSV files
+- 
+### 1. Dataset Creation
+A hypothetical logistics dataset containing 500 shipments was created using NumPy and Pandas.
+
+### 2. Data Inspection
+
+The dataset was examined using:
+
+- Dataset shape
+- Column names
+- Data types
+- First and last records
+- Dataset information
+
+### 3. Data Quality Checking
+
+The following checks were performed:
+- Missing values
+- Duplicate records
+- Negative numerical values
+These checks help ensure that the dataset is suitable for analysis.
+
+### 4. Descriptive Statistics
+
+Descriptive statistics were calculated for the numerical variables, including:
+- Mean
+- Median
+- Standard deviation
+- Minimum
+- Maximum
+- Quartiles
+These statistics provide an overview of logistics performance and variation.
+
+### 5. Delivery-Time Analysis
+
+Delivery time was analyzed using mean, median, minimum, maximum, and percentiles.
+This analysis helps identify typical delivery performance and possible delays or bottlenecks.
+
+### 6. Shipment-Volume Analysis
+
+Shipment volume was analyzed to understand typical shipment sizes and variation.
+This information can support:
+- Vehicle capacity planning
+- Warehouse planning
+- Shipment consolidation
+- Transportation planning
+
+### 7. Transportation-Cost Analysis
+
+Transportation costs were analyzed using descriptive statistics and percentiles.
+This helps identify the normal range of transportation expenses and potentially expensive shipments.
+
+## Visualizations
+
+Three main visualizations were created using Matplotlib.
+
+### Delivery-Time Distribution
+
+A histogram was created to show how delivery times are distributed across shipments.
+
+### Shipment-Volume Distribution
+
+A histogram was created to show the distribution of shipment volumes.
+
+### Transportation-Cost Distribution
+
+A histogram was created to show the distribution of transportation costs.
+
+## Correlation Analysis
+
+A correlation matrix was created to study relationships between:
+- Delivery Time
+- Shipment Volume
+- Transportation Cost
+- Distance
+- Fuel Cost
+- 
+Correlation analysis helps identify variables that may be related to transportation costs and operational performance.
+The analysis also demonstrates that correlation can identify relationships,
+that require further investigation, although correlation alone does not prove causation.
 
 Week 2 demonstrated that data quality is essential for reliable logistics analytics. Missing values, duplicates, invalid values, and extreme observations can affect calculations and decision-making. A structured preprocessing pipeline helps ensure that future analysis is based on more reliable and consistent data.
+
+# Week 3 - Advanced Data Analysis and Visualization in Logistics
+
+## Overview
+
+Week 3 focused on advanced data analysis and visualization for logistics using Python. The main objective was to explore a hypothetical logistics dataset, perform exploratory data analysis (EDA), create meaningful visualizations, identify relationships between logistics variables, and generate practical insights for data-driven decision-making.
+A simulated dataset containing 500 shipments was created using Python, NumPy, and Pandas. The dataset included delivery time, shipment volume, transportation cost, distance, and fuel cost.
+
+## Objectives
+
+The main objectives of Week 3 were:
+
+- Create a hypothetical logistics dataset.
+- Inspect and validate the dataset.
+- Perform exploratory data analysis.
+- Calculate descriptive statistics.
+- Analyze delivery-time patterns.
+- Analyze shipment-volume patterns.
+- Analyze transportation costs.
+- Create logistics visualizations.
+- Perform correlation analysis.
+- Identify potential logistics cost drivers.
+- Generate operational insights and recommendations.
+
+## Dataset
+
+The dataset contains 500 simulated shipments with the following variables:
+
+## Tools and Technologies
+The following tools and Python libraries were used:
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Visual Studio Code
+- CSV files
+
+## Analysis Performed
+
+### 1. Dataset Creation
+
+A hypothetical logistics dataset containing 500 shipments was created using NumPy and Pandas.
+
+### 2. Data Inspection
+
+The dataset was examined using:
+
+- Dataset shape
+- Column names
+- Data types
+- First and last records
+- Dataset information
+
+### 3. Data Quality Checking
+
+The following checks were performed:
+
+- Missing values
+- Duplicate records
+- Negative numerical values
+
+These checks help ensure that the dataset is suitable for analysis.
+
+### 4. Descriptive Statistics
+
+Descriptive statistics were calculated for the numerical variables, including:
+
+- Mean
+- Median
+- Standard deviation
+- Minimum
+- Maximum
+- Quartiles
+
+These statistics provide an overview of logistics performance and variation.
+
+### 5. Delivery-Time Analysis
+
+Delivery time was analyzed using mean, median, minimum, maximum, and percentiles.
+
+This analysis helps identify typical delivery performance and possible delays or bottlenecks.
+
+### 6. Shipment-Volume Analysis
+
+Shipment volume was analyzed to understand typical shipment sizes and variation.
+
+This information can support:
+
+- Vehicle capacity planning
+- Warehouse planning
+- Shipment consolidation
+- Transportation planning
+
+### 7. Transportation-Cost Analysis
+
+Transportation costs were analyzed using descriptive statistics and percentiles.
+
+This helps identify the normal range of transportation expenses and potentially expensive shipments.
+
+## Visualizations
+
+Three main visualizations were created using Matplotlib.
+
+### Delivery-Time Distribution
+
+A histogram was created to show how delivery times are distributed across shipments.
+
+### Shipment-Volume Distribution
+
+A histogram was created to show the distribution of shipment volumes.
+
+### Transportation-Cost Distribution
+
+A histogram was created to show the distribution of transportation costs.
+
+
+## Correlation Analysis
+
+A correlation matrix was created to study relationships between:
+
+- Delivery Time
+- Shipment Volume
+- Transportation Cost
+- Distance
+- Fuel Cost
+Correlation analysis helps identify variables that may be related to transportation costs and operational performance.
+
+## Key Insights
+
+The analysis provides a foundation for understanding logistics operations.
+Important areas investigated include:
+- Delivery-time consistency
+- Shipment-volume variation
+- Transportation-cost variation
+- Distance as a potential cost driver
+- Fuel cost as a potential cost driver
+- Relationships between shipment characteristics and logistics costs
+
+The analysis also demonstrates that correlation can identify relationships that require further investigation,
+although correlation alone does not prove causation.
+
