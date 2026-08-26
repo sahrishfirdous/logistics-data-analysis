@@ -518,3 +518,87 @@ Important areas investigated include:
 The analysis also demonstrates that correlation can identify relationships that require further investigation,
 although correlation alone does not prove causation.
 
+# Week 4 - Predictive Modeling and Optimization in Logistics Systems
+
+## Overview
+
+Week 4 focused on applying predictive modeling and optimization techniques to logistics operations using Python. The main objective was to build models that predict delivery time, evaluate their performance, identify important factors, and use the results to suggest practical logistics optimization strategies.
+
+A simulated dataset containing 500 shipments was created. The analysis used shipment volume, transportation distance, transportation cost, and fuel cost as predictive features, while delivery time was used as the target variable.
+
+## Objectives
+
+The main objectives of Week 4 were:
+
+- Define a logistics prediction problem.
+- Create a simulated logistics dataset.
+- Prepare features and the target variable.
+- Split data into training and testing sets.
+- Build predictive models.
+- Evaluate model performance.
+- Compare different machine-learning models.
+- Perform cross-validation.
+- Analyze feature importance.
+- Develop logistics optimization recommendations.
+
+## Dataset
+
+The dataset contains 500 simulated shipment records.
+
+| Variable | Description |
+|---|---|
+| Shipment_ID | Unique identification number for each shipment |
+| Shipment_Volume_kg | Shipment volume in kilograms |
+| Distance_km | Transportation distance |
+| Transportation_Cost | Cost associated with transportation |
+| Fuel_Cost | Fuel-related transportation cost |
+| Delivery_Time_Days | Delivery time in days and prediction target |
+
+## Prediction Problem
+
+The main prediction problem was:
+
+> **Predict delivery time in days using logistics-related variables.**
+
+The input features used by the models were:
+
+- Shipment Volume
+- Distance
+- Transportation Cost
+- Fuel Cost
+
+The target variable was:
+
+`Delivery_Time_Days`
+
+## Methodology
+
+### 1. Dataset Creation
+
+A hypothetical dataset containing 500 shipments was generated using NumPy and Pandas.
+
+A random seed of `42` was used to make the results reproducible.
+
+### 2. Dataset Inspection
+
+The dataset was checked for:
+
+- Number of rows and columns
+- Column names
+- Data types
+- Missing values
+- Duplicate records
+- Sample records
+
+The dataset contained 500 rows and 6 columns.
+
+### 3. Feature and Target Preparation
+
+The following variables were selected as features:
+
+```text
+Shipment_Volume_kg
+Distance_km
+Transportation_Cost
+Fuel_Cost
+
